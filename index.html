@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Aldrich" />
+</script>
+<script src = 'https://code.jquery.com/jquery-3.3.1.slim.min.js'>
+</script>
+<script 
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous">
+</script>
+<script src='getdate.js'></script>
+<script src='gettime.js'></script>
+<script src='laptime.js'></script>
+<script src='finish.js'></script>
+<script src='buttonCounter.js'></script>
+<script src='workingTime.js'></script>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<html>
+    <body>
+        <div class = "terop">
+            現在時刻:</br>
+        </div>
+    <div class="now" style="text-align:center">
+        <div> 
+            <class="nowDate" id="nowDate">
+        </div>
+        <div> 
+            <class="nowTime" id="nowTime">
+        </div>
+    </div>
+    <div class="button">
+        <input type="button" type='button' id='PUSH' value="PUSH" onclick="buttonCounter();" style="display:block">
+    </div>
+        <div class="lap">
+            <class="lapTime" id="lapTime" style="display:none">
+        </div>
+        <div class="finish">
+            <class="finishTime" id="finishTime" style="display:none">
+        </div>
+        <div class="working">
+            <class="workingHours" id="workingHours" style="display:none"></class>
+        </div>
+    </body>
+</html>
